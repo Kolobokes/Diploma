@@ -29,13 +29,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: произошла успешная покупка тура и получено сообщение об успешной покупке.
 
@@ -44,13 +44,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4442";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4442";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: покупка не произошла, получено сообщение об ошибке при покупке.
 
@@ -59,13 +59,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
-- поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) оставит пустым;
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
+- поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) оставит пустым;
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля Месяц.
 
@@ -74,13 +74,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
-- поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) оставить пустым;
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
+- поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) оставить пустым;
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля Год.
 
@@ -89,13 +89,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
-- поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) оставить пустым;
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
+- поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) оставить пустым;
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля Владелец.
 
@@ -104,13 +104,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) оставить пустым;
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) оставить пустым;
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля CVC/CVV.
 
@@ -119,13 +119,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "20";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
+- нажать на кнопку "Купить" ![Купить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV.png) внести "20";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление о неверном заполнении поля CVC/CVV.
 
@@ -134,13 +134,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: произошла успешная покупка тура и получено сообщение об успешной покупке.
 
@@ -149,13 +149,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4442";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4442";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: покупка не произошла, получено сообщение об ошибке при покупке.
 
@@ -164,13 +164,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
-- поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставит пустым;
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
+- поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставит пустым;
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля Месяц.
 
@@ -179,13 +179,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
-- поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставить пустым;
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
+- поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставить пустым;
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля Год.
 
@@ -194,13 +194,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
-- поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставить пустым;
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
+- поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставить пустым;
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "999";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля Владелец.
 
@@ -209,13 +209,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
-- поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставить пустым;
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
+- поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) оставить пустым;
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление об обязательно заполнении поля CVC/CVV.
 
@@ -224,13 +224,13 @@
 Шаги:
 - запустить приложение aqa-shop.jar;
 - перейти на http://localhost:8080;
-- нажать на кнопку ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
-- в поле ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
-- в поле ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
-- в поле ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
-- в поле ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
-- в поле ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "20";
-- нажать на кнопку ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- нажать на кнопку "Купить в кредит" ![Купить в кредит](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
+- в поле "Номер карты" ![Номер карты](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9D%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "4444 4444 4444 4441";
+- в поле "Месяц" ![Месяц](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9C%D0%B5%D1%81%D1%8F%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "08";
+- в поле "Год" ![Год](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%93%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "22";
+- в поле "Владелец" ![Владелец](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "Ivanov Ivan";
+- в поле "CVC/CVV" ![CVV](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/CVV%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png) внести "20";
+- нажать на кнопку "Продолжить" ![Продолжить](https://github.com/Kolobokes/Diploma/blob/8f60810ca73eba51949167b4c3dbef26eabb95a1/pictures/%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B8%D1%82%D1%8C%20%D0%B2%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82.png);
 
 Ожидаемый результат: покупка не произошла, показано уведомление о неверном заполнении поля CVC/CVV.
 
