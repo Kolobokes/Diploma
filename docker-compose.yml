@@ -19,3 +19,12 @@ services:
     image: node:10-alpine
     ports:
       - '9999:9999'
+  postgresdb:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=root
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    ports:
+      - '5432:5432'

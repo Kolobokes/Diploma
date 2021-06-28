@@ -1,7 +1,5 @@
 package data;
 
-import org.junit.jupiter.api.Test;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -27,15 +25,15 @@ public class DataHelper {
         return "Ivanov Ivan";
     }
 
-    public static String CorrectCVV() {
+    public static String correctCVV() {
         return "999";
     }
 
-    public static String InCorrectCVV() {
+    public static String inCorrectCVV() {
         return "20";
     }
 
-    public static int InformationOfPayAddedToTheDatabase() throws ClassNotFoundException, SQLException {
+    public static int informationOfPayAddedToTheDatabase() throws ClassNotFoundException, SQLException {
 
         BaseConnection baseConnection = new BaseConnection();
         ResultSet count = baseConnection.countPaymentEntity();
@@ -45,7 +43,7 @@ public class DataHelper {
         return result;
     }
 
-    public static int InformationOfCreditRequestToTheDatabase() throws ClassNotFoundException, SQLException {
+    public static int informationOfCreditRequestToTheDatabase() throws ClassNotFoundException, SQLException {
 
         BaseConnection baseConnection = new BaseConnection();
         ResultSet count = baseConnection.countCreditRequestEntity();

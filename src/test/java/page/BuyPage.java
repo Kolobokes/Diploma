@@ -3,6 +3,7 @@ package page;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -22,19 +23,16 @@ public class BuyPage {
         allButton.get(2).click();
     }
 
-    public SelenideElement notificationError() {
-        return error;
-
+    public void notificationError() {
+        error.shouldBe(visible);
     }
 
-    public SelenideElement notificationOk() {
-        return ok;
-
+    public void notificationOk() {
+       ok.shouldBe(visible);
     }
 
-    public SelenideElement emptyField() {
-        return emptyField;
-
+    public void emptyField() {
+        emptyField.shouldBe(visible);
     }
 
 }

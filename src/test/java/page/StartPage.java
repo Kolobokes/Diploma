@@ -1,12 +1,8 @@
 package page;
 
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.SelenideElement;
-import data.DataHelper;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selectors.withText;
 
 public class StartPage {
     private ElementsCollection AllButton = $$("button");

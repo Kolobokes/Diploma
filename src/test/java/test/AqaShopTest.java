@@ -1,176 +1,178 @@
 package test;
 
-import data.BaseConnection;
+
 import data.DataHelper;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import page.BuyInCreditPage;
 import page.BuyPage;
 import page.StartPage;
 
 import java.sql.*;
-import java.time.Duration;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AqaShopTest {
 
-    @Test
-    void CorrectBuyTourTest() throws ClassNotFoundException, SQLException{
-
-        int NumberOfPurchasesBeforeNewTransaction = DataHelper.InformationOfPayAddedToTheDatabase();
-        int NumberOfPurchasesExpected = NumberOfPurchasesBeforeNewTransaction +1;
-
-        open("http://localhost:8080");
-        BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.CorrectCVV());
-
-        int NumberOfPurchasesAfterNewTransaction = DataHelper.InformationOfPayAddedToTheDatabase();
-
-        buyPage.notificationOk().shouldBe(visible);
-
-        assertEquals(NumberOfPurchasesExpected, NumberOfPurchasesAfterNewTransaction);
+    @BeforeAll
+    void customProperty(){
+        System.setProperty("base", "");
     }
 
     @Test
-    void InCorrectBuyTourTest() throws ClassNotFoundException, SQLException{
+    void correctBuyTourTest() throws ClassNotFoundException, SQLException{
 
-        int NumberOfPurchasesExpected = DataHelper.InformationOfPayAddedToTheDatabase();
-
-        open("http://localhost:8080");
-        BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.CorrectCVV());
-
-        int NumberOfPurchasesAfterNewTransaction = DataHelper.InformationOfPayAddedToTheDatabase();
-
-        buyPage.notificationError().shouldBe(visible);
-
-        assertEquals(NumberOfPurchasesExpected, NumberOfPurchasesAfterNewTransaction);
-    }
-
-    @Test
-    void EmptyMonthBuyTourTest(){
+        int numberOfPurchasesBeforeNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
+        int numberOfPurchasesExpected = numberOfPurchasesBeforeNewTransaction +1;
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), "", DataHelper.year(), DataHelper.cardHolder(), DataHelper.CorrectCVV());
-        buyPage.emptyField().shouldBe(visible);
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+
+        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
+
+        buyPage.notificationOk();
+
+        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
     }
 
     @Test
-    void EmptyYearBuyTourTest(){
+    void inCorrectBuyTourTest() throws ClassNotFoundException, SQLException{
+
+        int numberOfPurchasesExpected = DataHelper.informationOfPayAddedToTheDatabase();
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), "", DataHelper.cardHolder(), DataHelper.CorrectCVV());
-        buyPage.emptyField().shouldBe(visible);
+        buyPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+
+        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
+
+        buyPage.notificationError();
+
+        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
     }
 
     @Test
-    void EmptyCardHolderBuyTourTest(){
+    void emptyMonthBuyTourTest(){
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), "", DataHelper.CorrectCVV());
-        buyPage.emptyField().shouldBe(visible);
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), "", DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.emptyField();
     }
 
     @Test
-    void EmptyCvvBuyTourTest(){
+    void emptyYearBuyTourTest(){
+
+        open("http://localhost:8080");
+        BuyPage buyPage = new StartPage().buyPage();
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), "", DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.emptyField();
+    }
+
+    @Test
+    void emptyCardHolderBuyTourTest(){
+
+        open("http://localhost:8080");
+        BuyPage buyPage = new StartPage().buyPage();
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), "", DataHelper.correctCVV());
+        buyPage.emptyField();
+    }
+
+    @Test
+    void emptyCvvBuyTourTest(){
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
         buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), "");
-        buyPage.emptyField().shouldBe(visible);
+        buyPage.emptyField();
     }
 
     @Test
-    void InCorrectCvvBuyTourTest(){
+    void inCorrectCvvBuyTourTest(){
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.InCorrectCVV());
-        buyPage.emptyField().shouldBe(visible);
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.inCorrectCVV());
+        buyPage.emptyField();
     }
 
     @Test
-    void CorrectBuyInCreditTourTest() throws ClassNotFoundException, SQLException{
+    void correctBuyInCreditTourTest() throws ClassNotFoundException, SQLException{
 
-        int NumberOfPurchasesBeforeNewTransaction = DataHelper.InformationOfCreditRequestToTheDatabase();
-        int NumberOfPurchasesExpected = NumberOfPurchasesBeforeNewTransaction +1;
+        int numberOfPurchasesBeforeNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
+        int numberOfPurchasesExpected = numberOfPurchasesBeforeNewTransaction +1;
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.CorrectCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
-        int NumberOfPurchasesAfterNewTransaction = DataHelper.InformationOfCreditRequestToTheDatabase();
+        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
 
-        buyInCreditPage.notificationOk().shouldBe(visible);
+        buyInCreditPage.notificationOk();
 
-        assertEquals(NumberOfPurchasesExpected, NumberOfPurchasesAfterNewTransaction);
+        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
     }
 
     @Test
-    void InCorrectBuyInCreditTourTest() throws ClassNotFoundException, SQLException{
+    void inCorrectBuyInCreditTourTest() throws ClassNotFoundException, SQLException{
 
-        int NumberOfPurchasesExpected = DataHelper.InformationOfCreditRequestToTheDatabase();
+        int numberOfPurchasesExpected = DataHelper.informationOfCreditRequestToTheDatabase();
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.CorrectCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
-        int NumberOfPurchasesAfterNewTransaction = DataHelper.InformationOfCreditRequestToTheDatabase();
+        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
 
-        buyInCreditPage.notificationError().shouldBe(visible);
+        buyInCreditPage.notificationError();
 
-        assertEquals(NumberOfPurchasesExpected, NumberOfPurchasesAfterNewTransaction);
+        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
     }
 
     @Test
-    void EmptyMonthBuyTourInCreditTest(){
+    void emptyMonthBuyTourInCreditTest(){
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), "", DataHelper.year(), DataHelper.cardHolder(), DataHelper.CorrectCVV());
-        buyInCreditPage.emptyField().shouldBe(visible);
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), "", DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyInCreditPage.emptyField();
     }
 
     @Test
-    void EmptyYearBuyTourInCreditTest(){
+    void emptyYearBuyTourInCreditTest(){
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), "", DataHelper.cardHolder(), DataHelper.CorrectCVV());
-        buyInCreditPage.emptyField().shouldBe(visible);
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), "", DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyInCreditPage.emptyField();
     }
 
     @Test
-    void EmptyCardHolderBuyTourInCreditTest(){
+    void emptyCardHolderBuyTourInCreditTest(){
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), "", DataHelper.CorrectCVV());
-        buyInCreditPage.emptyField().shouldBe(visible);
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), "", DataHelper.correctCVV());
+        buyInCreditPage.emptyField();
     }
 
     @Test
-    void EmptyCVVBuyTourInCreditTest(){
+    void emptyCVVBuyTourInCreditTest(){
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
         buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), "");
-        buyInCreditPage.emptyField().shouldBe(visible);
+        buyInCreditPage.emptyField();
     }
 
     @Test
-    void EmptyInCorrectCVVBuyTourInCreditTest(){
+    void emptyInCorrectCVVBuyTourInCreditTest(){
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.InCorrectCVV());
-        buyInCreditPage.emptyField().shouldBe(visible);
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.inCorrectCVV());
+        buyInCreditPage.emptyField();
     }
 }
