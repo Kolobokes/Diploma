@@ -2,26 +2,21 @@ package test;
 
 
 import data.DataHelper;
+import lombok.SneakyThrows;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import page.BuyInCreditPage;
 import page.BuyPage;
 import page.StartPage;
 
-import java.sql.*;
-
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AqaShopTest {
 
-    @BeforeAll
-    void customProperty(){
-        System.setProperty("base", "");
-    }
-
+    @SneakyThrows
     @Test
-    void correctBuyTourTest() throws ClassNotFoundException, SQLException{
+    void correctBuyTourTest() {
 
         int numberOfPurchasesBeforeNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
         int numberOfPurchasesExpected = numberOfPurchasesBeforeNewTransaction +1;
@@ -37,8 +32,9 @@ public class AqaShopTest {
         assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
     }
 
+    @SneakyThrows
     @Test
-    void inCorrectBuyTourTest() throws ClassNotFoundException, SQLException{
+    void inCorrectBuyTourTest() {
 
         int numberOfPurchasesExpected = DataHelper.informationOfPayAddedToTheDatabase();
 
@@ -98,8 +94,9 @@ public class AqaShopTest {
         buyPage.emptyField();
     }
 
+    @SneakyThrows
     @Test
-    void correctBuyInCreditTourTest() throws ClassNotFoundException, SQLException{
+    void correctBuyInCreditTourTest() {
 
         int numberOfPurchasesBeforeNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
         int numberOfPurchasesExpected = numberOfPurchasesBeforeNewTransaction +1;
@@ -115,8 +112,9 @@ public class AqaShopTest {
         assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
     }
 
+    @SneakyThrows
     @Test
-    void inCorrectBuyInCreditTourTest() throws ClassNotFoundException, SQLException{
+    void inCorrectBuyInCreditTourTest() {
 
         int numberOfPurchasesExpected = DataHelper.informationOfCreditRequestToTheDatabase();
 

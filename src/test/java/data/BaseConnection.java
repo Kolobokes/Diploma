@@ -2,9 +2,9 @@ package data;
 
 
 
+import lombok.SneakyThrows;
+
 import java.sql.*;
-
-
 
 public class BaseConnection {
     public static String NAME_USER = "app";
@@ -30,7 +30,8 @@ public class BaseConnection {
         }
     }
 
-    public ResultSet countPaymentEntity() throws ClassNotFoundException, SQLException{
+    @SneakyThrows
+    public ResultSet countPaymentEntity() {
 
    //     Class.forName("com.mysql.cj.jdbc.Driver");
         ResultSet count = statement.executeQuery("SELECT count(*) AS total FROM payment_entity");
