@@ -1,5 +1,7 @@
 package data;
 
+import lombok.SneakyThrows;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -33,22 +35,22 @@ public class DataHelper {
         return "20";
     }
 
-    public static int informationOfPayAddedToTheDatabase() throws ClassNotFoundException, SQLException {
+    @SneakyThrows
+    public static String informationOfStatusPayment() {
 
-        BaseConnection baseConnection = new BaseConnection();
-        ResultSet count = baseConnection.countPaymentEntity();
+        ResultSet count = BaseConnection.statusPaymentEntity();
         count.next();
-        int result = count.getInt("total");
+        String result = count.getString("status");
 
         return result;
     }
 
-    public static int informationOfCreditRequestToTheDatabase() throws ClassNotFoundException, SQLException {
+    @SneakyThrows
+    public static String informationOfStatusCredit() {
 
-        BaseConnection baseConnection = new BaseConnection();
-        ResultSet count = baseConnection.countCreditRequestEntity();
+        ResultSet count = BaseConnection.statusCreditRequestEntity();
         count.next();
-        int result = count.getInt("total");
+        String result = count.getString("status");
 
         return result;
     }

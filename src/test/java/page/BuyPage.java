@@ -3,6 +3,8 @@ package page;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.$;
@@ -24,11 +26,11 @@ public class BuyPage {
     }
 
     public void notificationError() {
-        error.shouldBe(visible);
+        error.shouldBe(visible, Duration.ofSeconds(15));
     }
 
     public void notificationOk() {
-       ok.shouldBe(visible);
+       ok.shouldBe(visible, Duration.ofSeconds(15));
     }
 
     public void emptyField() {

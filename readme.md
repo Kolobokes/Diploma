@@ -3,6 +3,6 @@
 1. Скопируйте проект
 2. Запустите базы данных, выполнив команду `docker-compose up`. При этом у вас уже должен быть установлен Docker
 3. Запустите тестируемое приложение на базе Postgres, выполнив команду `java -jar -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -Dspring.datasource.username=app -Dspring.datasource.password=pass aqa-shop.jar`
-4. Запустите тесты
+4. Запустите тесты, выполнив команду `gradlew test -Dproperty.URL="jdbc:postgresql://localhost:5432/app" -Dproperty.PASSWORD="pass" -Dproperty.NAME_USER="app"`
 5. Запустите приложение на базе MySQL `java -jar -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -Dspring.datasource.username=app -Dspring.datasource.password=pass aqa-shop.jar`
-6. Запустите тесты
+6. Запустите тесты, выполнив команду `gradlew test -Dproperty.URL="jdbc:mysql://localhost:3306/app" -Dproperty.PASSWORD="pass" -Dproperty.NAME_USER="app"`

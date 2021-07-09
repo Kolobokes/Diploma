@@ -18,35 +18,32 @@ public class AqaShopTest {
     @Test
     void correctBuyTourTest() {
 
-        int numberOfPurchasesBeforeNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
-        int numberOfPurchasesExpected = numberOfPurchasesBeforeNewTransaction +1;
-
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
         buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
-        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
-
         buyPage.notificationOk();
 
-        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
+        String expectedStatusTransaction = "APPROVED";
+        String statusTransaction = DataHelper.informationOfStatusPayment();
+
+        assertEquals(expectedStatusTransaction, statusTransaction);
     }
 
     @SneakyThrows
     @Test
     void inCorrectBuyTourTest() {
 
-        int numberOfPurchasesExpected = DataHelper.informationOfPayAddedToTheDatabase();
-
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
         buyPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
-        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfPayAddedToTheDatabase();
-
         buyPage.notificationError();
 
-        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
+        String expectedStatusTransaction = "DECLINED";
+        String statusTransaction = DataHelper.informationOfStatusPayment();
+
+        assertEquals(expectedStatusTransaction, statusTransaction);
     }
 
     @Test
@@ -98,35 +95,32 @@ public class AqaShopTest {
     @Test
     void correctBuyInCreditTourTest() {
 
-        int numberOfPurchasesBeforeNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
-        int numberOfPurchasesExpected = numberOfPurchasesBeforeNewTransaction +1;
-
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
         buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
-        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
-
         buyInCreditPage.notificationOk();
 
-        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
+        String expectedStatusTransaction = "APPROVED";
+        String statusTransaction = DataHelper.informationOfStatusCredit();
+
+        assertEquals(expectedStatusTransaction, statusTransaction);
     }
 
     @SneakyThrows
     @Test
     void inCorrectBuyInCreditTourTest() {
 
-        int numberOfPurchasesExpected = DataHelper.informationOfCreditRequestToTheDatabase();
-
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
         buyInCreditPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
-        int numberOfPurchasesAfterNewTransaction = DataHelper.informationOfCreditRequestToTheDatabase();
-
         buyInCreditPage.notificationError();
 
-        assertEquals(numberOfPurchasesExpected, numberOfPurchasesAfterNewTransaction);
+        String expectedStatusTransaction = "DECLINED";
+        String statusTransaction = DataHelper.informationOfStatusCredit();
+
+        assertEquals(expectedStatusTransaction, statusTransaction);
     }
 
     @Test

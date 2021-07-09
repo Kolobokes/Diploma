@@ -7,9 +7,9 @@ import lombok.SneakyThrows;
 import java.sql.*;
 
 public class BaseConnection {
-    public static String NAME_USER = "app";
-    public static String PASSWORD = "pass";
-    public static String URL = "jdbc:mysql://localhost:3306/app";
+    public static String NAME_USER = System.getProperty("property.NAME_USER");
+    public static String PASSWORD = System.getProperty("property.PASSWORD");
+    public static String URL = System.getProperty("property.URL");
     public static Connection connection;
     public static Statement statement;
 
@@ -20,9 +20,7 @@ public class BaseConnection {
                 SQLException throwables) {
             throwables.printStackTrace();
         }
-    }
 
-    static {
         try {
             statement = connection.createStatement();
         } catch (SQLException throwables) {
@@ -31,20 +29,19 @@ public class BaseConnection {
     }
 
     @SneakyThrows
-    public ResultSet countPaymentEntity() {
+    static ResultSet statusCreditRequestEntity() {
 
-   //     Class.forName("com.mysql.cj.jdbc.Driver");
-        ResultSet count = statement.executeQuery("SELECT count(*) AS total FROM payment_entity");
+        ResultSet status = statement.executeQuery("SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1");
 
-        return count;
+        return status;
     }
 
-    public ResultSet countCreditRequestEntity() throws ClassNotFoundException, SQLException{
+    @SneakyThrows
+    static ResultSet statusPaymentEntity() {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        ResultSet count = statement.executeQuery("SELECT count(*) AS total FROM credit_request_entity");
+        ResultSet status = statement.executeQuery("SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1");
 
-        return count;
+        return status;
     }
 }
 
