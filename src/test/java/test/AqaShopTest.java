@@ -20,7 +20,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
         buyPage.notificationOk();
 
@@ -36,7 +36,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
         buyPage.notificationError();
 
@@ -56,11 +56,20 @@ public class AqaShopTest {
     }
 
     @Test
+    void inCorrectMonthBuyTourTest(){
+
+        open("http://localhost:8080");
+        BuyPage buyPage = new StartPage().buyPage();
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(),  DataHelper.InCorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.emptyField();
+    }
+
+    @Test
     void emptyYearBuyTourTest(){
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), "", DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), "", DataHelper.cardHolder(), DataHelper.correctCVV());
         buyPage.emptyField();
     }
 
@@ -69,7 +78,16 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), "", DataHelper.correctCVV());
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), "", DataHelper.correctCVV());
+        buyPage.emptyField();
+    }
+
+    @Test
+    void inCorrectCardHolderBuyTourTest(){
+
+        open("http://localhost:8080");
+        BuyPage buyPage = new StartPage().buyPage();
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.inCorrectCardHolder(), DataHelper.correctCVV());
         buyPage.emptyField();
     }
 
@@ -78,7 +96,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), "");
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), "");
         buyPage.emptyField();
     }
 
@@ -87,7 +105,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyPage buyPage = new StartPage().buyPage();
-        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.inCorrectCVV());
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.inCorrectCVV());
         buyPage.emptyField();
     }
 
@@ -97,7 +115,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
         buyInCreditPage.notificationOk();
 
@@ -113,7 +131,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.inCorrectCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
 
         buyInCreditPage.notificationError();
 
@@ -133,11 +151,20 @@ public class AqaShopTest {
     }
 
     @Test
+    void inCorrectMonthBuyTourInCreditTest(){
+
+        open("http://localhost:8080");
+        BuyPage buyPage = new StartPage().buyPage();
+        buyPage.fillInCardDetails(DataHelper.correctCardNumber(),  DataHelper.InCorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyPage.emptyField();
+    }
+
+    @Test
     void emptyYearBuyTourInCreditTest(){
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), "", DataHelper.cardHolder(), DataHelper.correctCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), "", DataHelper.cardHolder(), DataHelper.correctCVV());
         buyInCreditPage.emptyField();
     }
 
@@ -146,7 +173,16 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), "", DataHelper.correctCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), "", DataHelper.correctCVV());
+        buyInCreditPage.emptyField();
+    }
+
+    @Test
+    void inCorrectCardHolderBuyTourInCreditTest(){
+
+        open("http://localhost:8080");
+        BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.inCorrectCardHolder(), DataHelper.correctCVV());
         buyInCreditPage.emptyField();
     }
 
@@ -155,7 +191,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), "");
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), "");
         buyInCreditPage.emptyField();
     }
 
@@ -164,7 +200,7 @@ public class AqaShopTest {
 
         open("http://localhost:8080");
         BuyInCreditPage buyInCreditPage = new StartPage().buyInCreditPage();
-        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.month(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.inCorrectCVV());
+        buyInCreditPage.fillInCardDetails(DataHelper.correctCardNumber(), DataHelper.CorrectMonth(), DataHelper.year(), DataHelper.cardHolder(), DataHelper.inCorrectCVV());
         buyInCreditPage.emptyField();
     }
 }

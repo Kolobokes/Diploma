@@ -16,14 +16,9 @@ public class BaseConnection {
     static {
         try {
             connection = DriverManager.getConnection(URL, NAME_USER, PASSWORD);
+            statement = connection.createStatement();
         } catch (
                 SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
-        try {
-            statement = connection.createStatement();
-        } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }

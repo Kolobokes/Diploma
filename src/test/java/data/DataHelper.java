@@ -15,8 +15,12 @@ public class DataHelper {
         return "4444 4444 4444 4442";
     }
 
-    public static String month() {
+    public static String CorrectMonth() {
         return "08";
+    }
+
+    public static String InCorrectMonth() {
+        return "00";
     }
 
     public static String year() {
@@ -24,7 +28,11 @@ public class DataHelper {
     }
 
     public static String cardHolder() {
-        return "Ivanov Ivan";
+        return "Invaov Ivan";
+    }
+
+    public static String inCorrectCardHolder() {
+        return "999*";
     }
 
     public static String correctCVV() {

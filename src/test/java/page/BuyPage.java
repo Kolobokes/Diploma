@@ -15,6 +15,7 @@ public class BuyPage {
     private SelenideElement error =$(".notification_status_error");
     private SelenideElement ok =$(".notification_status_ok");
     private SelenideElement emptyField = $(".input_invalid > .input__inner > .input__sub");
+    private SelenideElement incorrectValue = $(".input_case-invalid > .input__inner > .input__sub");
 
     public void fillInCardDetails(String cardNumber, String month, String year, String cardHolder, String CVV) {
         allField.get(0).setValue(cardNumber);
